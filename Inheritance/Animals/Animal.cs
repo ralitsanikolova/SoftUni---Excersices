@@ -6,7 +6,6 @@ namespace Animals
 {
     class Animal
     {
-
         public string name;
         public int age;
         public string gender;
@@ -17,9 +16,6 @@ namespace Animals
             this.Name = name;
             this.Gender = gender;
         }
-
-
-
         public string Name
         {
             get
@@ -35,7 +31,6 @@ namespace Animals
                 name = value;
             }
         }
-
         public int Age
         {
             get
@@ -55,7 +50,6 @@ namespace Animals
                 age = value;
             }
         }
-
         public string Gender
         {
             get
@@ -76,13 +70,10 @@ namespace Animals
                 gender = value;
             }
         }
-
         public virtual string ProduceSound()
         {
             return string.Empty;
         }
-
-
         public virtual string Result()
         {
             StringBuilder stringBuilder = new StringBuilder();
