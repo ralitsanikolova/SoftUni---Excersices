@@ -9,7 +9,7 @@ namespace ExplicitInterfaces
             string input;
             while ((input = Console.ReadLine()) != "END")
             {
-                string[] data = input.Split("", StringSplitOptions.RemoveEmptyEntries);
+                string[] data = input.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
                 Citizen citizen = new Citizen
                 {

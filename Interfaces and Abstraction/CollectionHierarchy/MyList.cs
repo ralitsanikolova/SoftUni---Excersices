@@ -7,10 +7,6 @@ namespace CollectionHierarchy
 {
     public class MyList : ICustomCollection
     {
-        public int Add()
-        {
-            throw new NotImplementedException();
-        }
         List<string> collection { get; set; } = new List<string>();
         public string Remove()
         {
@@ -39,5 +35,6 @@ namespace CollectionHierarchy
         {
             return collection.Count();
         }
+
     }
 }

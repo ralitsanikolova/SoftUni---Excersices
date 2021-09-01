@@ -11,7 +11,6 @@ namespace CollectionHierarchy
             MyList myList = new MyList();
 
             string itemInput = Console.ReadLine();
-            //int RemoveOpertionInput  = int.Parse(Console.ReadLine());
             string[] collection = itemInput.Split(" ", StringSplitOptions.RemoveEmptyEntries);
 
             foreach (string item in collection)
