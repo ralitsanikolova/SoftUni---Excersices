@@ -8,12 +8,10 @@ namespace WildFarm
     {
         public Owl(string animalType, string name, double weigth, double wingsize)
            : base(animalType, name, weigth, wingsize) { }
-
         public override void AnimalSound()
         {
             Console.WriteLine($"Hoot Hoot");
         }
-
         public override void Eat(Food food)
         {
             if (food.GetType().Name != "Meat")

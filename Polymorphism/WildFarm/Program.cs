@@ -7,8 +7,6 @@ namespace WildFarm
     {
         static void Main(string[] args)
         {
-            List<Animal> animals = new List<Animal>();
-
             string animalInfo = Console.ReadLine();
             while (animalInfo != "End")
             {
@@ -30,7 +28,6 @@ namespace WildFarm
                 else if (foodType == nameof(Fruit))
                 {
                     food = new Fruit(quantity);
-
                 }
                 else if (foodType == nameof(Meat))
                 {
@@ -50,12 +47,16 @@ namespace WildFarm
                     if (animalType == "Cat")
                     {
                         animal = new Cat(animalType, name, breed, weigth, livingRegion);
-
+                        animal.AnimalSound();
+                        animal.Eat(food);
+                        Console.WriteLine(animal.ToString());
                     }
                     else if (animalType == "Tiger")
                     {
                         animal = new Tiger(animalType, name, breed, weigth, livingRegion);
-
+                        animal.AnimalSound();
+                        animal.Eat(food);
+                        Console.WriteLine(animal.ToString());
                     }
                 }
                 else if (animalType == " Owl" || animalType == "Hen")
@@ -64,12 +65,16 @@ namespace WildFarm
                     if (animalType == "Owl")
                     {
                         animal = new Owl(animalType, name, weigth, wingSize);
-
+                        animal.AnimalSound();
+                        animal.Eat(food);
+                        Console.WriteLine(animal.ToString());
                     }
                     if (animalType == "Hen")
                     {
                         animal = new Hen(animalType, name, weigth, wingSize);
-
+                        animal.AnimalSound();
+                        animal.Eat(food);
+                        Console.WriteLine(animal.ToString());
                     }
                 }
                 else if (animalType == "Mouse" || animalType == "Dog")
@@ -79,22 +84,17 @@ namespace WildFarm
                     if (animalType == "Mouse")
                     {
                         animal = new Mouse(animalType, name, weigth, livingRegion);
-
+                        animal.AnimalSound();
+                        animal.Eat(food);
+                        Console.WriteLine(animal.ToString());
                     }
                     if (animalType == "Dog")
                     {
                         animal = new Dog(animalType, name, weigth, livingRegion);
-
+                        animal.AnimalSound();
+                        animal.Eat(food);
+                        Console.WriteLine(animal.ToString());
                     }
-                }
-
-                for (int i = 0; i <= animals.Count; i++)
-                {
-
-                    animal.AnimalSound();
-                    animal.Eat(food);
-                    Console.WriteLine(animal.ToString());
-
                 }
                 animalInfo = Console.ReadLine();
             }

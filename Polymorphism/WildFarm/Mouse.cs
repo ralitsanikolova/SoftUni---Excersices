@@ -15,7 +15,6 @@ namespace WildFarm
         {
             Console.WriteLine("Squeak");
         }
-
         public override void Eat(Food food)
         {
             if (food.GetType().Name != "Vegetable" || food.GetType().Name != "Fruit")
@@ -29,7 +28,6 @@ namespace WildFarm
                 Weight += 0.10;
             }
         }
-
         public override string ToString()
         {
             return $"{AnimalType} [{Name}, {Weight}, {LivingRegion}, {FoodEaten}]";

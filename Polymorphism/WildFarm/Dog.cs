@@ -8,8 +8,7 @@ namespace WildFarm
     {
         public Dog(string animalType, string name, double weigth, string livingRegion)
             : base(animalType, name, weigth, livingRegion)
-        {
-
+        { 
         }
 
         public override void AnimalSound()
@@ -23,7 +22,6 @@ namespace WildFarm
             {
                 Console.WriteLine($"{AnimalType} does not eat {food.GetType().Name}");
             }
-
             else
             {
                 FoodEaten += food.Quantity;

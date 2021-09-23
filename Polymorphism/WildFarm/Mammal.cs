@@ -6,7 +6,6 @@ namespace WildFarm
 {
     abstract class Mammal : Animal
     {
-
         public Mammal(string animalType, string name, double weigth, string livingRegion)
             : base(animalType, name, weigth)
         {

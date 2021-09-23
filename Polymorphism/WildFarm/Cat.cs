@@ -10,7 +10,6 @@ namespace WildFarm
         public Cat(string animalType, string name, string breed, double weigth, string livingRegion)
             : base(animalType, name, breed, weigth, livingRegion)
         {
-
         }
         public override void AnimalSound()
         {
